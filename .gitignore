@@ -4,7 +4,9 @@ __pycache__/
 .python-version
 *.egg-info/
 .venv/
+.venv
 venv/
+.vscode/
 answers_50q.json
 reports/*.json
 !reports/.gitkeep

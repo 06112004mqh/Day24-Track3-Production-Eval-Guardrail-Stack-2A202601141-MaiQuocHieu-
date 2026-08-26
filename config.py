@@ -15,8 +15,8 @@ QDRANT_PORT = 6333
 COLLECTION_NAME = "lab24_production"
 
 # --- Embedding (same as Day 18) ---
-EMBEDDING_MODEL = "BAAI/bge-m3"
-EMBEDDING_DIM = 1024
+EMBEDDING_MODEL = "text-embedding-3-small"
+EMBEDDING_DIM = 1536
 
 # --- Chunking (same as Day 18) ---
 HIERARCHICAL_PARENT_SIZE = 2048

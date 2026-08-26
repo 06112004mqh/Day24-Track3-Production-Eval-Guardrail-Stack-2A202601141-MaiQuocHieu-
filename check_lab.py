@@ -89,8 +89,9 @@ def main():
     # 6. Test suite
     print("\n[6] Test suite:")
     result = subprocess.run(
-        ["pytest", "tests/", "--tb=short", "-q"],
+        [sys.executable, "-m", "pytest", "tests/", "--tb=short", "-q"],
         capture_output=True, text=True,
+        env=dict(os.environ, PYTEST_DISABLE_PLUGIN_AUTOLOAD="1"),
     )
     tests_ok = result.returncode == 0
     total += 1
